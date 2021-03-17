@@ -1,5 +1,5 @@
 const linedOut = document.querySelector('.ordered');
-linedOut.addEventListener("click", function (event) {
-    const clickedElement = event.target;
+linedOut.addEventListener("click", function () {
+    
     clickedElement.style.strike();
 })
