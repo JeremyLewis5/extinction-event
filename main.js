@@ -1,5 +1,6 @@
-const linedOut = document.querySelectorAll('.ordered');
-linedOut.addEventListener("click", function () {
+const linedOut = document.querySelector('.ordered');
+linedOut.addEventListener("click", function (event) {
     
-    linedOut.style.backgroundColor = 'purple';
+    const elementThatWasClicked = event.target;
+    elementThatWasClicked.style.backgroundColor = 'green';;
 });
