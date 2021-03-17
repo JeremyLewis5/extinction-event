@@ -4,6 +4,6 @@ for (const line of linedOut) {
 linedOut.addEventListener("click", function (event) {
     
     const elementThatWasClicked = event.target;
-    elementThatWasClicked.style.backgroundColor = 'green';
+    elementThatWasClicked.style.textDecoration = 'line-through';
 });
 }
