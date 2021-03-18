@@ -25,11 +25,24 @@ for (pic of picFade) {
     pic.addEventListener('click', function (event) {
     
     const elementThatWasClicked = event.target;
-    elementThatWasClicked.style.opacity = '0';   
+    elementThatWasClicked.style.width = '0px';   
     });
 }
 
-//const button = document.querySelector("#destroy-all");
+const button = document.querySelector("#destroy-all");
 
+button.addEventListener('click', function () {
+    for (const line of linedOut) {
+        line.style.textDecoration = 'line-through';
+    }
+
+    for (const fade of fadeAway) {
+        fade.style.opacity = 0;
+    }
+
+    for (const pic of picFade) {
+        pic.style.width = '0px';
+    }
+});
 
 
